@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import './../styles/App.css';
+
 
 const App = () => {
     const cityList = [
@@ -35,16 +35,16 @@ const App = () => {
    ];
 
     const list=cityList.filter((city)=>
-      city.country=='India'
+      city.country==='India'
     );
     console.log(list);
 
   return (
     <div id="main">
              <ol>
-              {list.map((item,index)=>{
+              {list.map((item,index)=>(
                 <li key={`location${index+1}`}>{item.name}</li>
-              })}
+              ))}
               </ol> 
     </div>
   )
