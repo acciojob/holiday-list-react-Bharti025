@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import './../styles/App.css';
 
 const App = () => {
-    const cityList = [{ name: 'Goa', country: 'India' },
+    const cityList = [
+      { name: 'Goa', country: 'India' },
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
@@ -30,11 +31,13 @@ const App = () => {
     { name: 'Amritsar', country: 'India' },
     { name: 'Mussoorie', country: 'India' },
     { name: 'Mount Abu', country: 'India' },
-    { name: 'Tirupati', country: 'India' },
-    ]
-    const list=cityList.filter((city)=>{
-      return city.country=='India';
-    })
+    { name: 'Tirupati', country: 'India' }
+   ];
+
+    const list=cityList.filter((city)=>
+      city.country=='India'
+    );
+    console.log(list);
 
   return (
     <div id="main">
